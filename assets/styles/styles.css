@@ -14,6 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
 
 body {
@@ -42,11 +43,8 @@ body {
   }
   
   input[type=submit] {
-    background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
-    border: none;
-    cursor: pointer;
   }
   
   input[type=submit]:hover {
@@ -83,4 +81,18 @@ body {
       margin-top: 0;
     }
   }
+    
+  .row {
+    clear: both;
+  }
+  
+  .card {
+    float: left;
+    position: relative;
+    height: auto;
+    width: 200px;
+    margin: 15px;
+    box-sizing: border-box;
+  }
+  
   
