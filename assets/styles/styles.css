@@ -94,5 +94,9 @@ body {
     margin: 15px;
     box-sizing: border-box;
   }
+
+  .navbar-toggler-icon {
+    background-color: black;
+  }
   
   
