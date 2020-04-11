@@ -1,102 +1,141 @@
- .image {
-    width: 200px;
-    height: auto;
-} 
-  /* Footer */
+/* .image {
+  width: 400px;
+  height: auto;
+} */
+/* Footer */
 .below {
-    height: 80px;
-    background: #666;
-    border-top: 8px solid #4aaaa5;
-    margin-top: 20px;
+  height: 80px;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+  margin-top: 20px;
 }
 /* Sticky Header */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-body {
-    background: url("../images/webb-dark.png");
-    opacity: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
+body {
+  background: url("../images/webb-dark.png");
+  opacity: 20;
+}
 
 .h1.head {
-    background-color: aqua; 
-    padding: 20px;
+  background-color: aqua;
+  padding: 20px;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    color: white;
-    padding: 12px 20px;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the container/contact section */
-  .container {
-    border-radius: 0px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-top: 100px;
-  }
-  
-  /* Create two columns that float next to eachother */
-  .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-    
-  .row {
-    clear: both;
-  }
-  
-  .card {
-    float: left;
-    position: relative;
-    height: auto;
-    width: 200px;
-    margin: 15px;
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  .navbar-toggler-icon {
-    background-color: black;
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 990px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
-  
-  
+}
+
+.row {
+  clear: both;
+}
+
+.card {
+  float: left;
+  position: relative;
+  height: auto;
+  width: 200px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.navbar-toggler {
+  display: block;
+} */
+/* New Responsive  */
+
+@media (max-width: 600px) {
+  .navbar-header {
+    float: none;
+  }
+  /* .navbar-left,
+  .navbar-right {
+    float: none !important;
+  } */
+  .navbar-toggle {
+    display: block;
+  }
+  /* .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  } */
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+}
