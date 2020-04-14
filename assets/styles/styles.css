@@ -3,6 +3,10 @@
   height: auto;
 } */
 /* Footer */
+.rotateimg180 {
+  transform: rotate(90deg);
+}
+
 .below {
   height: 80px;
   background: #666;
